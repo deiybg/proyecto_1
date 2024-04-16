@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --backgroundcolorheader: #1d1d1d;
+  --backgroundcolor-primary: #ffffff;
+  --primarycolor: #fff;
+  --secondarycolor: #1d1d1d;
+  --spacinglong: 40px;
+  --spacingshort: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+
+  background-color: var(--backgroundcolorheader);
+  position: fixed;
+}
+header .headerfirst {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+
+  border-bottom: 0.3px white solid;
+}
+
+header p {
+  text-transform: uppercase;
+  color: var(--primarycolor);
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+  font-size: 1em;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacinglong);
+  width: max-content;
+  height: 100%;
+  border: 2px red solid;
+}
+
+header .bandera {
+  height: 20px;
+  width: auto;
+}
+
+header ul li:nth-child(2) {
+  word-spacing: 10px;
+}
+header ul li:first-child {
+  word-spacing: 10px;
+}
+.fa-caret-down {
+  position: absolute;
+  color: white;
+
+  bottom: 0;
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+header li {
+  list-style-type: none;
+  position: relative;
+}
+
+header a {
+  color: var(--primarycolor);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  header ul {
+    display: none;
+  }
+  
+  .menu {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+}

@@ -30,8 +30,7 @@ header .headerfirst {
   justify-content: center;
   align-items: center;
   height: 50%;
-
-  border-bottom: 0.3px white solid;
+border-bottom: 0.3px white solid;
 }
 
 header p {
@@ -50,7 +49,7 @@ header ul {
   gap: var(--spacinglong);
   width: max-content;
   height: 100%;
-  border: 2px red solid;
+  
 }
 
 header .bandera {
@@ -87,12 +86,12 @@ header a {
 .menu {
   display: none;
 }
-
+/* AQUI EMPIEZAN LAS MEDIAS QUERY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media (max-width: 1024px) {
   header ul {
     display: none;
   }
-  
+
   .menu {
     display: block;
     max-width: 100%;
@@ -100,3 +99,34 @@ header a {
     margin: auto;
   }
 }
+/* ACA TERMINAN LAS MEDIAS QUERY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.headersecond {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+  height: 50%;
+}
+
+.headersecond  a {
+  color: var(--primarycolor);
+}
+
+.mainlogo {
+  height: 70%;
+  width: auto;
+}
+
+.barradebusqueda input{
+  background-color: var(--backgroundcolorheader);
+  border-left: none;
+  border-right: none;
+  border-bottom-style:2px white solid;
+  color: var(--primarycolor);
+  
+}
+.barradebusqueda ::placeholder{
+  color: var(--primarycolor);
+}
+
+

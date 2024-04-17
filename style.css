@@ -19,7 +19,6 @@
 header {
   height: 100px;
   width: 100%;
-
   background-color: var(--backgroundcolorheader);
   position: fixed;
 }
@@ -30,7 +29,7 @@ header .headerfirst {
   justify-content: center;
   align-items: center;
   height: 50%;
-border-bottom: 0.3px white solid;
+  border-bottom: 0.3px white solid;
 }
 
 header p {
@@ -49,7 +48,6 @@ header ul {
   gap: var(--spacinglong);
   width: max-content;
   height: 100%;
-  
 }
 
 header .bandera {
@@ -91,6 +89,14 @@ header a {
   header ul {
     display: none;
   }
+  header p {
+    font-size: 0.5em;
+    width: 100%;
+  }
+
+  header .headersecond {
+    gap: var(--spacinglong);
+  }
 
   .menu {
     display: block;
@@ -98,17 +104,31 @@ header a {
     max-height: 100%;
     margin: auto;
   }
+
+  header .mainlogo {
+    display: block;
+    height: 35%;
+  }
+
+  header .username {
+    display: flex;
+  }
+  header .username a i {
+    font-size: 85%;
+  }
+
+ 
 }
 /* ACA TERMINAN LAS MEDIAS QUERY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .headersecond {
   display: flex;
   align-items: center;
   justify-content: space-around;
- 
+
   height: 50%;
 }
 
-.headersecond  a {
+.headersecond a {
   color: var(--primarycolor);
 }
 
@@ -117,16 +137,37 @@ header a {
   width: auto;
 }
 
-.barradebusqueda input{
+.barradebusqueda input {
   background-color: var(--backgroundcolorheader);
   border-left: none;
   border-right: none;
-  border-bottom-style:2px white solid;
+  border-bottom-style: 2px white solid;
   color: var(--primarycolor);
-  
 }
-.barradebusqueda ::placeholder{
+.barradebusqueda ::placeholder {
   color: var(--primarycolor);
 }
 
+.fa-user {
+  color: var(--primarycolor);
+}
 
+.username {
+  display: none;
+}
+
+header .headersecond ul li:first-child {
+  word-spacing: 1px;
+}
+
+main .introduction{
+  text-align: center;
+}
+main .introduction img {
+  position: relative;
+  margin-top: 101px;
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+ 
+}

@@ -120,25 +120,6 @@ header a {
   header .username a i {
     font-size: 85%;
   }
-
-  /* .introduction {
-    position: static;
-    top: 100px;
-    margin-bottom: 200px;
-  }
-  .Equipment {
-    margin-top: 40px;
-  }
-  .Equipment h2 {
-    margin-bottom: -100px;
-    font-size: 1em;
-  }
-  main .Equipment img {
-    margin-bottom: -70px;
-  }
-  main .Equipment li {
-    margin-bottom: -150px;
-  } */
 }
 /* ACA TERMINAN LAS MEDIAS QUERY DEL HEADER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .headersecond {
@@ -203,25 +184,27 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 70%;
-  align-items: center;
+  width: 80%;
+  min-height: max-content;
+  justify-content: center;
 }
 .Equipment h2 {
-  width: 95%;
-  font-size: 3em;
+  width: 100%;
+  font-size: 3.5em;
   font-weight: 600;
-  align-content: center;
   text-align: left;
+  margin-bottom: 150px;
 }
-main .Equipment ul {
-  width: 95%;
+.Equipment ul {
+  width: 100%;
+  height: max-content;
   display: grid;
-
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
   gap: var(--spacinglong);
+  list-style-type: none;
 }
-main .Equipment ul li {
+.Equipment ul li {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -229,29 +212,31 @@ main .Equipment ul li {
   text-align: center;
 }
 
-main .Equipment img {
-  height: 550px;
-  max-width: 100%;
-  object-fit: contain;
-  object-position: center;
+.Equipment ul li a {
+  height: 100%;
+  width: 100%;
 }
 
-main .Equipment ul {
-  list-style-type: none;
+.imgeq {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .subtitle {
   font-weight: 800;
-  margin-top: -120px;
+  text-align: left;
+  margin-top: 10px;
 }
 
 .Infinity {
-  margin-top: 100px;
+  margin-top: 200px;
   width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
- 
+  
+
   text-align: center;
 }
 .Infinity ul li img {
@@ -272,7 +257,7 @@ main .Equipment ul {
   margin: 10px auto;
   line-height: 1;
 }
-.Infinity p{
+.Infinity p {
   margin-top: 45px;
   font-size: 1.5em;
 }
@@ -282,74 +267,122 @@ main .Equipment ul {
   justify-content: center;
   width: 30%;
   margin: 40px auto;
-  
 }
 
-.botones-compra{
+.botones-compra {
   background-color: black;
   color: white;
   border: none;
-  padding: 20px 80px;
+  padding: 40px 120px;
   border-radius: 10px;
   text-align: center;
-  display: inline-block;
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 500;
   cursor: pointer;
   transition: transform 1s;
+  white-space: nowrap;
 }
 
-.botones-compra:hover{
+.botones-compra:hover {
   transform: scale(1.2);
   font-weight: 900;
+}
+
+.Sneakers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  min-height: max-content;
+  justify-content: center;
+  margin-top: 100px;
+  align-content: center;
   
 }
 
+.Sneakers ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  gap: 40px;
+}
+.Sneakers ul li {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.Sneakers ul li a{
+  width: 100%;
+ 
+}
+
+.imgsnk {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
 /* /////////////////////MEDIAS QUERY PARA EL MAIN///////////////////////////// */
 @media (max-width: 1024px) {
   .introduction {
     top: 100px;
     margin-bottom: 100px;
   }
-  .Equipment {
-    margin-top: 40px;
-  }
+
   .Equipment h2 {
-    margin-bottom: -100px;
-    font-size: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .imgeq {
+    width: 60%;
+  }
+  .subtitle {
     text-align: center;
   }
-  main .Equipment img {
-    margin-bottom: -70px;
-  }
-  main .Equipment li {
-    margin-bottom: -150px;
+
+  .Infinity {
+    margin-top: 50px;
   }
 
-  .Infinity{
-    margin-top: 200px;
-  }
-
-  .Infinity h4{
+  .Infinity h4 {
     width: 100%;
     font-size: 2em;
     margin-top: 10px;
-    
   }
 
-  .Infinity, h3, p{
-    font-size: 0.8em;
+  .Infinity,
+  h3,
+  p {
+    font-size: 0.6em;
   }
-  .Infinity p{
+  .Infinity p {
     margin-top: 10px;
   }
 
-  .buttons{
-    gap:20px;
+  .buttons {
+    gap: 20px;
   }
 
-  .botones-compra{
+  .botones-compra {
     padding: 10px 40px;
   }
+
+  .Sneakers{
+    margin-top: 10px;
+  }
+  .imgsnk{
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+
 } /* /////////////////////ACA TERMINANMEDIAS QUERY PARA EL MAIN///////////////////////////// */

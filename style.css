@@ -235,7 +235,6 @@ main {
   height: auto;
   display: flex;
   flex-direction: column;
-  
 
   text-align: center;
 }
@@ -273,7 +272,7 @@ main {
   background-color: black;
   color: white;
   border: none;
-  padding: 40px 120px;
+  padding: 25px 75px;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -299,7 +298,6 @@ main {
   justify-content: center;
   margin-top: 100px;
   align-content: center;
-  
 }
 
 .Sneakers ul {
@@ -314,13 +312,10 @@ main {
 .Sneakers ul li {
   display: flex;
   flex-direction: column;
-  
-  
 }
 
-.Sneakers ul li a{
+.Sneakers ul li a {
   width: 100%;
- 
 }
 
 .imgsnk {
@@ -329,6 +324,79 @@ main {
   width: 100%;
   height: auto;
 }
+
+.Earthtones {
+  
+  margin-top: 100px;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+}
+
+.Earthtones a {
+  width: 90%;
+  height: auto;
+}
+
+.imgearthones {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.Earthtones p {
+  margin-top: 45px;
+  font-size: 1.5em;
+}
+
+.Earthtones h4 {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-top: 100px;
+}
+.Earthtones h5 {
+  font-size: 6em;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  font-weight: 900;
+  width: 50%;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.Earthtones ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  list-style-type: none;
+  display: flex;
+  gap: var(--spacinglong);
+}
+
+.Earthtones ul li{
+  display: flex;
+  flex-direction: column;
+}
+.imgearthtones{
+  max-width: 100%;
+  height: auto;
+}
+
+.color{
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.price{
+  font-weight: 500;
+  margin-top: 10px;
+}
+
 /* /////////////////////MEDIAS QUERY PARA EL MAIN///////////////////////////// */
 @media (max-width: 1024px) {
   .introduction {
@@ -376,13 +444,11 @@ main {
     padding: 10px 40px;
   }
 
-  .Sneakers{
+  .Sneakers {
     margin-top: 10px;
   }
-  .imgsnk{
+  .imgsnk {
     width: 60%;
     margin-bottom: 10px;
   }
-
-
 } /* /////////////////////ACA TERMINANMEDIAS QUERY PARA EL MAIN///////////////////////////// */

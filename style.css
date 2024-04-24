@@ -120,6 +120,9 @@ header a {
   header .username a i {
     font-size: 85%;
   }
+  header .fa-briefcase {
+    color: var(--primarycolor);
+  }
 }
 /* ACA TERMINAN LAS MEDIAS QUERY DEL HEADER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .headersecond {
@@ -150,6 +153,9 @@ header a {
 }
 
 .fa-user {
+  color: var(--primarycolor);
+}
+.fa-briefcase {
   color: var(--primarycolor);
 }
 
@@ -464,26 +470,208 @@ main {
     width: 100%;
     font-size: 3em;
   }
-  .Earthtones ul{
+  .Earthtones ul {
     margin-top: 10px;
   }
- 
-  .imgearthtones{
+
+  .imgearthtones {
     width: 60%;
     margin: 0 auto;
   }
 
- .color, .price{
-  text-align: center;
- }
+  .color,
+  .price {
+    text-align: center;
+  }
 }
 /* /////////////////////ACA TERMINANMEDIAS QUERY PARA EL MAIN///////////////////////////// */
 
-
-footer{
-  background-color: #F0F0F0;
+footer {
+  background-color: #f0f0f0;
+  margin-top: 100px;
   width: 100%;
   height: auto;
   padding: 75px 350px;
-  
+  display: flex;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+.footer-first {
+  max-width: 25%;
+}
+.footer-first h6 {
+  font-weight: 900;
+  font-size: 1.7em;
+  margin-bottom: 10px;
+}
+.footer-first p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.newsletter p {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+.newsletter span {
+  text-decoration: underline;
+}
+.payment {
+  display: flex;
+  gap: var(--spacingshort);
+}
+
+.input-container {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 95%;
+  height: 40px;
+}
+.input-container input::placeholder {
+  text-align: right;
+  padding: 15px;
+}
+footer a img {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  width: 15%;
+}
+
+footer .copyright {
+  font-weight: 300;
+  font-size: 0.9em;
+
+  white-space: no-wrap;
+}
+.img-payment {
+  margin-top: 10px;
+  width: 15%;
+  height: auto;
+}
+.copyright span {
+  text-decoration: underline;
+}
+.footer-second {
+  min-width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-second > a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer li a {
+  text-decoration: none;
+}
+
+footer li:first-child {
+  padding-bottom: 30px;
+  font-weight: 600;
+}
+footer li {
+  padding-bottom: 30px;
+}
+
+footer .fa-phone {
+  display: none;
+}
+footer .fa-user-check {
+  display: none;
+}
+
+footer .fa-instagram {
+  display: none;
+}
+footer .fa-angle-down {
+  display: none;
+}
+
+/* ///////////////////////////ACA EMPIEZAN LAS MEDIAS PARA EL FOOTER///////////////////////// */
+@media (max-width: 1024px) {
+  footer {
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 15px;
+  }
+
+  footer .footer-first {
+    min-width: 100%;
+  }
+
+  footer .footer-first p {
+    text-align: left;
+  }
+
+  .footer-second {
+    width: 100%;
+  }
+
+  footer a img {
+    width: 15%;
+  }
+
+  footer .footer-first p,
+  .paymethods {
+    font-size: 0.9em;
+  }
+
+  footer .payment img {
+    width: 10%;
+    margin-top: 0px;
+  }
+  footer .payment {
+    border-bottom: 1px black solid;
+    padding-bottom: 20px;
+  }
+
+  footer .copyright {
+    display: none;
+  }
+
+  footer .footer-second > a {
+    display: none;
+  }
+
+  footer .footer-second li:not(:first-child) {
+    display: none;
+  }
+  footer .footer-second {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .footer-second ul {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .footer-second ul li {
+    border-bottom: 1px black solid;
+    padding: 20px;
+  }
+
+  footer .fa-phone {
+    display: inline;
+  }
+  footer .fa-user-check {
+    display: inline;
+  }
+
+  footer .fa-instagram {
+    display: inline;
+  }
+
+  footer .fa-angle-down {
+    display: inline;
+  }
 }

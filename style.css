@@ -326,7 +326,6 @@ main {
 }
 
 .Earthtones {
-  
   margin-top: 100px;
   width: 100%;
   height: min-content;
@@ -353,12 +352,12 @@ main {
   font-size: 1.5em;
 }
 
-.Earthtones h4 {
+.Earthtones h5 {
   font-size: 2.5em;
   font-weight: 300;
   margin-top: 100px;
 }
-.Earthtones h5 {
+.Earthtones h6 {
   font-size: 6em;
   text-transform: uppercase;
   letter-spacing: 0.1px;
@@ -369,30 +368,31 @@ main {
   width: 100%;
 }
 
-.Earthtones ul{
+.Earthtones ul {
   display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
   list-style-type: none;
   display: flex;
   gap: var(--spacinglong);
+  justify-content: center;
 }
 
-.Earthtones ul li{
+.Earthtones ul li {
   display: flex;
   flex-direction: column;
 }
-.imgearthtones{
+.imgearthtones {
   max-width: 100%;
   height: auto;
 }
 
-.color{
+.color {
   margin-top: 10px;
   font-weight: 300;
 }
 
-.price{
+.price {
   font-weight: 500;
   margin-top: 10px;
 }
@@ -451,4 +451,39 @@ main {
     width: 60%;
     margin-bottom: 10px;
   }
-} /* /////////////////////ACA TERMINANMEDIAS QUERY PARA EL MAIN///////////////////////////// */
+
+  .Earthtones,
+  h5,
+  p {
+    font-size: 0.6em;
+    margin-bottom: 5px;
+    width: 95%;
+    text-align: center;
+  }
+  .Earthtones h6 {
+    width: 100%;
+    font-size: 3em;
+  }
+  .Earthtones ul{
+    margin-top: 10px;
+  }
+ 
+  .imgearthtones{
+    width: 60%;
+    margin: 0 auto;
+  }
+
+ .color, .price{
+  text-align: center;
+ }
+}
+/* /////////////////////ACA TERMINANMEDIAS QUERY PARA EL MAIN///////////////////////////// */
+
+
+footer{
+  background-color: #F0F0F0;
+  width: 100%;
+  height: auto;
+  padding: 75px 350px;
+  
+}
